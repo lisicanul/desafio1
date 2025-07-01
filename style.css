@@ -1,0 +1,104 @@
+    body {
+      font-family: 'Inconsolata', monospace;
+      font-size: 20px;
+      background: linear-gradient(135deg, var(--neutral-900), #1c103a);
+      color: var(--neutral-0);
+      padding: 3rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      background: linear-gradient(to right, var(--orange-500), var(--neutral-0));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subheading {
+      color: var(--neutral-300);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .ticket {
+      background-color: var(--neutral-700);
+      border: 2px solid var(--orange-700);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .ticket-header {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--orange-500);
+      margin-bottom: 0.4rem;
+    }
+
+    .ticket-meta {
+      color: var(--neutral-300);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--neutral-900);
+      padding: 0.8rem;
+      border-radius: 12px;
+    }
+
+    .user-avatar img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid var(--orange-500);
+    }
+
+    .user-names {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-names strong {
+      font-size: 1rem;
+      color: var(--neutral-0);
+    }
+
+    .user-social {
+      font-size: 0.85rem;
+      color: var(--neutral-500);
+    }
+
+    .ticket-cutout {
+      text-align: right;
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--neutral-500);
+      border-top: 1px dashed var(--neutral-500);
+      padding-top: 0.8rem;
+    }
+
+    @media (min-width: 768px) {
+      .ticket {
+        font-size: 22px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      body {
+        padding: 5rem;
+      }
+    }
